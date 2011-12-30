@@ -88,7 +88,7 @@ class HtmlBuilder {
 	 *	Utility methods for generating HTML
 	 */
 	protected function htmlTagOpen($tag, $attrs=array()){
-		$attrs = $attrs ? ' '.html_attrs($attrs) : '';
+		$attrs = $attrs ? ' '.$this->htmlAttrs($attrs) : '';
 		return '<'.$tag.$attrs.'>';
 	}
 	
@@ -97,7 +97,7 @@ class HtmlBuilder {
 	}
 	
 	protected function htmlTagOpenClose($tag, $attrs=array()){
-		$attrs = $attrs ? ' '.html_attrs($attrs) : '';
+		$attrs = $attrs ? ' '.$this->htmlAttrs($attrs) : '';
 		return '<'.$tag.$attrs.' />';
 	}
 	

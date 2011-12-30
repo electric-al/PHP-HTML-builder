@@ -13,8 +13,8 @@ $rows = array(
 
 $h = new HtmlBuilder();
 
-$h->push('table')
-	->push('tr')
+$h->push('table#mainTable.myTable')
+	->push('tr.headerRow')
 		->insert('th', 'Column 1')
 		->insert('th', 'Column 2')
 		->insert('th', 'Column 3')
